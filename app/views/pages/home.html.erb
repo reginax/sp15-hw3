@@ -6,10 +6,10 @@
 	      <td>Age: </td>
 	   </tr>
 	   	<tr>
-	   	<% @models.each do |models| %>
-	      <td><%= models.username %></td>
-	      <td><%= models.email %></td>
-	      <td><%= models.age %></td>
+	   	<% @user.each do |user| %>
+	      <td><%= user.username %></td>
+	      <td><%= user.email %></td>
+	      <td><%= user.age %></td>
 	   </tr>
 	   <% end %>
 	</table>
@@ -22,8 +22,8 @@
 	   
 	   
 	   	<tr>
-	   	<% @models.each do |models| %>
-	      <td><%= models.name %></td>
+	   	<% @cat.each do |cat| %>
+	      <td><%= cat.name %></td>
 	   </tr>
 	   <% end %>
 	</table>
@@ -37,9 +37,9 @@
 	   
 	   
 	   	<tr>
-	   	<% @models.each do |models| %>
-	      <td><%= models.tasks %></td>
-	      <td><%= models.finished %></td>
+	   	<% @todo.each do |todo| %>
+	      <td><%= todo.tasks %></td>
+	      <td><%= todo.finished %></td>
 	   </tr>
 	   <% end %>
 	</table>

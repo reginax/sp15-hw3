@@ -1,5 +1,8 @@
 class PagesController < ApplicationController
   def home
-    @models = User.all
+    @user = User.all
+    @cat = Cat.all
+    @todo = Todo.all
+
   end
 end
