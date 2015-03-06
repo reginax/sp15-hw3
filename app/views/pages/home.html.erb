@@ -1,0 +1,45 @@
+<h1> Users </h1>
+	<table>
+	   <tr>
+	      <td>Username: </td>
+	      <td>Email: </td>
+	      <td>Age: </td>
+	   </tr>
+	   	<tr>
+	   	<% @models.each do |models| %>
+	      <td><%= models.username %></td>
+	      <td><%= models.email %></td>
+	      <td><%= models.age %></td>
+	   </tr>
+	   <% end %>
+	</table>
+
+<h1> Cats </h1>
+	<table>
+	   <tr>
+	      <td>Name: </td>
+	   </tr>
+	   
+	   
+	   	<tr>
+	   	<% @models.each do |models| %>
+	      <td><%= models.name %></td>
+	   </tr>
+	   <% end %>
+	</table>
+
+<h1> Todos </h1>
+	<table>
+	   <tr>
+	      <td>Tasks: </td>
+	      <td>Finished: </td>
+	   </tr>
+	   
+	   
+	   	<tr>
+	   	<% @models.each do |models| %>
+	      <td><%= models.tasks %></td>
+	      <td><%= models.finished %></td>
+	   </tr>
+	   <% end %>
+	</table>
